@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: rgba(253, 194, 3, 0.845);
+}
+
+
+header {
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    color: #000;
+    text-shadow: 0px 0px 4px 4px rgb(150, 149, 149);
+}
+
+#mainGift {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0px 0 5px 5px rgb(148, 148, 148);
+}
+
+#giftsFor {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: rgb(46, 3, 102);
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#giftsFor li {
+    padding: 15px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#giftsFor li:hover {
+    background-color: rgb(18, 172, 199);
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0px 0 5px 2px rgba(17, 79, 92, 0.792);
+}
+
+/* Align form and wishlist side by side */
+footer {
+    display: flex;
+    justify-content: space-around; /* Space between form and list */
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form styles */
+#form-container {
+    width: 40%;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(25, 24, 24, 0.74);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Wishlist styles */
+#wishlist-container {
+    width: 40%;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(25, 24, 24, 0.74);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#wishlist {
+    list-style: none;
+    padding: 0;
+}
+
+#wishlist li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+#wishlist li button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#wishlist li button:hover {
+    background: darkred;
+}
+
